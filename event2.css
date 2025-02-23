@@ -1,0 +1,189 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f7d7e0, #f0e4e4);
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #fca0a0, #f77c7c); /* Soft pink gradient */
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+/* Section Styles */
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3, h4 {
+    color: #ff6f61; /* Coral for main headings */
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2.8em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+p strong {
+    color: #ff6f61; /* Coral color for strong text */
+}
+
+/* Event Image */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Styles */
+video {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Map Styles */
+iframe {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* RSVP Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus {
+    border-color: #ff6f61;
+}
+
+form input[type="submit"] {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #f55b4e;
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff6f61; /* Coral color */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    video {
+        margin-top: 15px;
+    }
+}
